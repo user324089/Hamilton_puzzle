@@ -279,7 +279,7 @@ LRESULT CALLBACK window_callback(HWND hwnd, UINT message, WPARAM wParam, LPARAM 
             // save the window dimensions for later events
             viewport_width = LOWORD(lParam);
             viewport_height = HIWORD(lParam);
-            smaller_dimension = std::min(viewport_height, viewport_width);
+            smaller_dimension = (std::min)(viewport_height, viewport_width);
             InvalidateRect(hwnd, nullptr, FALSE);
             break;
         case WM_DESTROY:
