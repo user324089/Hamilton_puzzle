@@ -4,6 +4,7 @@
 #include <cstdio>
 #include <iostream>
 #include <vector>
+#include <algorithm>
 #include <windows.h>
 
 constexpr int dummy_field = -2;
